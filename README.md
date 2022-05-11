@@ -1,2 +1,3 @@
-# daksh-recruitment
-Task assigned to canditates who want to be a part of the Daksh web development team
+# daksh-recruitment -- Website updated using HTML, CSS, and Javascript
+#### Link to the website: https://daksh2k22.netlify.app/
+
