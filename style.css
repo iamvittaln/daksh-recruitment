@@ -1,6 +1,129 @@
-/* Your CSS goes here */
-
-/* Example */
-img {
-  width: 20rem;
+.change-to-dark-mode
+{
+  background-color: black;
+}
+body
+{
+  background-color:aliceblue;
+}
+h1
+{
+  text-align: center;
+  font-size: 3rem;
+  font-family: Ubuntu;
+  color:blueviolet;
+}
+.site_links_r
+{
+  text-align: center;
+}
+.site_links_c
+{
+  display: inline-block;
+  padding-right:30px;
+  font-size: 2rem;
+}
+a.link_style
+{
+  text-decoration: none;
+  color: crimson;
+  font-family: Lora;
+}
+a.link_style:hover
+{
+  color: aqua;
+}
+ul
+{
+  list-style: none;
+}
+#switch-dark
+{
+  background:none;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  color:darkorange;
+  font-size: x-large;
+}
+.right_side_info
+{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+#feedback_text
+{
+  text-align: center;
+  font-family: "Fauna One";
+  color:blue;
+  font-size: large;
+}
+i
+{
+  font-family: "Fjalla One";
+  color:deeppink;
+}
+b
+{
+  font-family: "Libre Baskerville";
+  color:forestgreen;
+}
+form
+{
+  background-color:mediumslateblue;
+}
+fieldset
+{
+  border: none;
+}
+legend
+{
+    font-size: 25px;
+    font-family:Ubuntu;
+}
+label
+{
+    font-size: 20px;
+    font-family: "Fjalla One";
+    font-weight:600;
+    padding: 15px 15px 15px 0;
+    display: inline-block;
+}
+input,select
+{
+    width:100%;
+    box-sizing: border-box;
+    padding:10px;
+    border: 1px solid white;
+}
+textarea
+{
+  resize:none;
+}
+.footer-title
+{
+  display: flex;
+  justify-content: center;
+  font-family: Poppins;
+  color:firebrick;
+}
+.row
+{
+  display:flex;
+  justify-content: center;
+}
+.column
+{
+  padding: 10px;
+}
+#imgFooter
+{
+  background-color: white;
+}
+.footer_images
+{
+  color:pink;
+  width: 1rem;
+  padding: 5px;
 }
