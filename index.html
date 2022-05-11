@@ -13,46 +13,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daksh</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
   </head>
-  <body>
+  <body onload="random_number()">
+    <button onclick="activateDark()" id="switch-dark" value="Switch to Dark Mode">Switch to Dark Mode</button>
     <!-- NavBar -->
     <header>
       <h1>Daksh</h1>
       <nav>
+      <div class="site_links_r">
         <ul>
-          <li>Home</li>
-          <li>Events</li>
-          <li>Team</li>
-          <li>Contact Us</li>
+          <div class="site_links_c"><a class="link_style" href="#"><li>Home</li></a></div>
+          <div class="site_links_c"><a class="link_style" href="#"><li>Events</li></a></div>
+          <div class="site_links_c"><a class="link_style" href="#"><li>Team</li></a></div>
+          <div class="site_links_c"><a class="link_style" href="#"><li>Contact Us</li></a></div>
         </ul>
+      </div>
       </nav>
     </header>
 
     <section>
       <article>
-        <img src="undraw_profile_data_re_v81r.svg" alt="Contact Us" />
-        <p>
-          We are always in the lookout for feedback and suggestions. Shoot your
-          queries and rest assured, we'll get back to you ASAP!
+        <div class="right_side_info">
+        <img style="width: 15rem;" src="undraw_profile_data_re_v81r.svg" alt="Contact Us" />
+        </div>
+        <p id="feedback_text" class="right_side_info">
+          We are always in the lookout for feedback and suggestions.
+          Shoot your queries and rest assured, we'll get back to you ASAP!
         </p>
       </article>
     </section>
 
-    <div>
+    <div class="right_side_info">
       <i>"Feedback is the breakfast of champions.”</i>
-      <b> - Ken Blanchard</b>
+      <b>&nbsp;- Ken Blanchard</b>
     </div>
 
     <section>
-      <div>
-        <form>
+      <div class="right_side_info">
+        <form onsubmit="sendSuccess()">
           <fieldset>
             <legend>Write to us</legend>
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" placeholder="Vijay" />
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Vijay" required />
+            <br />
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Ram" />
             <br />
             <label for="college">College:</label>
-            <input list="colleges" name="college" id="college" />
+            <input list="colleges" name="college" id="college" required/>
             <datalist id="colleges">
               <option value="SASTRA Thanjavur"></option>
               <option value="IIT Madras"></option>
@@ -60,23 +72,33 @@
               <option value="SSN Chennai"></option>
             </datalist>
             <br />
+            <label for"mno">Mobile Number: </label>
+            <input type="text" pattern="\d{10}" id="mno" name="mno" maxlength="10" placeholder="9890098900" title="Only numbers allowed and enter exactly 10 digits" required><br><br>
+            <label for="queries">Query/Suggestions: </label>
+            <textarea id="queries" name="queries" rows="4" cols="50" required></textarea><br>
             <input type="submit" value="Submit" />
           </fieldset>
         </form>
       </div>
     </section>
     <footer>
-      <span
-        >DAKSH, the international techno-management festival of SASTRA
-        University</span
-      >
+      <br><br>
+      <span class="footer-title">
+        DAKSH, the international techno-management festival of SASTRA
+        University</span>
       <span>
-        <a target="_blank" href="https://instagram.com"
-          ><div><img src="instagram.png" /></div
+      <div class="row">
+        <div class="column">
+        <a target="_blank" href="https://www.instagram.com/daksh2k22/"
+          ><div id="imgFooter"><img class="footer_images" src="instagram.png" /></div
         ></a>
-        <a target="_blank" href="https://twitter.com"
-          ><div><img src="twitter.png" /></div
+        </div>
+        <div class="column">
+        <a target="_blank" href="https://twitter.com/daksh2k22/"
+          ><div id="imgFooter"><img class="footer_images" src="twitter.png" /></div
         ></a>
+        </div>
+      </div>
       </span>
     </footer>
     <script src="script.js"></script>
